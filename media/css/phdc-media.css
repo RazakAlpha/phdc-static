@@ -1,0 +1,371 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	14;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+
+
+    
+    .pagetop {
+        height: 30vh;
+        width: 100%;
+        float: left;
+        clear: none;
+        display: block;
+    }
+    
+    
+    
+    .newstop{
+          background: -webkit-linear-gradient(45deg, #364796 0%, #1b5f5a 100%);
+    background: -o-linear-gradient(45deg, #364796 0%, #1b5f5a 100%);
+    background: linear-gradient(45deg, #364796 0%, #1b5f5a 100%);/* FF3.6+ *//* Chrome,Safari4+ *//* Chrome10+,Safari5.1+ *//* Opera 11.10+ *//* IE10+ */
+    }
+    
+    
+     .ddtop{
+          background:#0f9e4c;
+    }
+    
+    
+    .pt-details{
+        width: 80%;
+        float: left;
+        clear: none;
+        display: block;
+        height: auto;
+        margin: 14vh 10vw;
+    }
+    
+    
+    .ptd-name{
+        float: left;
+        clear: none;
+        border-width: 0 0 0 7px;
+        border-style: solid;
+        border-color: #0f9e4c;
+        padding: 0 1em;
+     
+    }
+    
+    
+    
+    .ptd-name h3{
+            font-family: "Bignoodletitling";
+        color: white;
+        display: inline;
+        float: left;
+        clear: none;
+        font-size: 2.5em;
+        margin-right: .5em;
+    }
+    
+    .ptd-name p{
+        color: #fff;
+        display: inherit;
+        margin:1em 2em;
+        font-family: 'Montserrat', sans-serif;
+        display: none;
+    }
+    
+    
+    
+    
+    .pt-navlist{
+        float: right;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        list-style: none;
+        width: auto;
+        height: auto;
+        display: block;
+    }
+    
+    .pt-navlist li span{
+        font-size: 3em;
+        display: inline;
+        display: block;
+        float: left;
+        clear: none;
+    }
+    
+    .pt-navlist li i{
+        font-size: 3em;
+        
+
+    }
+    
+    
+    .pt-navlist li{
+        font-size: .9em;
+        letter-spacing: 1px;
+         padding: .5em 1em;
+        display: inline;
+        margin-right: 2em;
+        font-weight: 400;
+        cursor: pointer;   background-image: linear-gradient(#0f9e4c, #0f9e4c);
+      background-position: 0 100%; /*OR bottom left*/
+      background-size: 0% 3px;
+      background-repeat: no-repeat;
+      transition:
+        background-size 0.3s,
+        background-position 0s 0.3s; /*change after the size immediately*/
+        line-height: 2.5em;
+        
+    }
+    
+    
+    
+    .pt-navlist li:hover{
+     background-position: 100% 100%; /*OR bottom right*/
+      background-size: 100% 2px;
+    }
+    
+   
+    
+    .ptn-active{
+        border-width: 0 0 3px 0;
+        border-style: solid;
+        border-color: #0f9e4c;
+        padding: .5em 1em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .ne-container{
+        width: 90%;
+        display: block;
+        float: left;
+        clear: none;
+        margin: 5vh 5%;
+        height: auto;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+	
+	
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+	
+    
+    
+    .pagetop {
+        height: 40vh;
+        width: 100%;
+        float: left;
+        clear: none;
+        display: block;
+    }
+    
+    
+    
+    .newstop{
+          background: -webkit-linear-gradient(45deg, #364796 0%, #1b5f5a 100%);
+    background: -o-linear-gradient(45deg, #364796 0%, #1b5f5a 100%);
+    background: linear-gradient(45deg, #364796 0%, #1b5f5a 100%);/* FF3.6+ *//* Chrome,Safari4+ *//* Chrome10+,Safari5.1+ *//* Opera 11.10+ *//* IE10+ */
+    }
+    
+    
+     .ddtop{
+          background:#0f9e4c;
+    }
+    
+    
+    .pt-details{
+        width: 80%;
+        float: left;
+        clear: none;
+        display: block;
+        height: auto;
+        margin: 25vh 10vw;
+    }
+    
+    
+    .ptd-name{
+        float: left;
+        clear: none;
+        border-width: 0 0 0 7px;
+        border-style: solid;
+        border-color: #0f9e4c;
+        padding: 0 1em;
+     
+    }
+    
+    
+    
+    .ptd-name h3{
+            font-family: "Bignoodletitling";
+        color: white;
+        display: inline;
+        float: left;
+        clear: none;
+        font-size: 5em;
+        margin-right: .5em;
+    }
+    
+    .ptd-name p{
+        color: #fff;
+        display: inherit;
+        margin:1em 2em;
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+    }
+    
+    
+    
+    
+    .pt-navlist{
+        float: right;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        list-style: none;
+        width: auto;
+        height: auto;
+        display: block;
+    }
+    
+    .pt-navlist li span{
+        font-size: 3em;
+        display: inline;
+        display: block;
+        float: left;
+        clear: none;
+    }
+    
+    .pt-navlist li i{
+        font-size: 3em;
+        
+
+    }
+    
+    
+    .pt-navlist li{
+        font-size: .9em;
+        letter-spacing: 1px;
+         padding: .5em 1em;
+        display: inline;
+        margin-right: 2em;
+        font-weight: 400;
+        cursor: pointer;   background-image: linear-gradient(#0f9e4c, #0f9e4c);
+      background-position: 0 100%; /*OR bottom left*/
+      background-size: 0% 3px;
+      background-repeat: no-repeat;
+      transition:
+        background-size 0.3s,
+        background-position 0s 0.3s; /*change after the size immediately*/
+        
+    }
+    
+    
+    
+    .pt-navlist li:hover{
+     background-position: 100% 100%; /*OR bottom right*/
+      background-size: 100% 2px;
+    }
+    
+   
+    
+    .ptn-active{
+        border-width: 0 0 3px 0;
+        border-style: solid;
+        border-color: #0f9e4c;
+        padding: .5em 1em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .ne-container{
+        width: 80%;
+        display: block;
+        float: left;
+        clear: none;
+        margin: 5vh 10%;
+        height: auto;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+		
+}

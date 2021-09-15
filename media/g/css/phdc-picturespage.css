@@ -1,0 +1,410 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	14;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+
+
+	
+    
+    
+    .newspic{
+        width: 100%;
+        height: auto;
+        display: block;
+        float: left;
+        clear: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        overflow: visible;
+        background-color: white;
+        transition: all .4s;
+        margin:0vh .5% 2vh;
+    }
+  
+    
+    
+    .np-image{
+        height: 50vh;
+        width: 100%;
+        float: left;
+        clear: none;
+        margin: 0 0 2em 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    .np-text{
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        background-color: none;
+        width: 100%;
+        height: auto;
+        padding: 1%;
+        transition: all .4s;
+        margin: 0;
+        display: block;
+        float: left;
+        clear: both;
+    }
+    
+    
+   
+    
+
+   .np-text .type{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        float: left;
+        clear: none;
+       margin: 2vh 5vw;
+    }
+    
+    
+   .np-text .date{
+        font-family: 'Montserrat', sans-serif;
+        font-size: .8em;
+        float: right;
+        clear: none;
+       margin: 2vh 5vw;
+    }
+    
+    
+    .np-text .title{
+        clear: both;
+        font-family: 'Montserrat', sans-serif;
+        color: #2c3a41;
+        font-weight: 700;
+        font-size: 1.2em;
+        margin: 0vh 5vw 5vh;
+    }
+    
+    
+    
+    
+    
+    
+
+    .gallery-pane{
+		border-radius: 1em;
+        background-color: white;
+        height: auto;
+        -webkit-column-count: 2;
+          -webkit-column-gap:   1em;
+          -moz-column-count:    2;
+          -moz-column-gap:      1em;
+          column-count:         2;
+          column-gap:           1em; 
+       padding: 1em;
+        
+	}
+	
+
+	
+
+
+
+.gallery-pane img{
+	width: 100% !important;
+  height: auto !important;
+	opacity:1;
+	float:left;
+	clear:none;
+	background-color:rgba(255,255,255,1);
+	cursor:pointer;
+	  -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+    margin-bottom: 1em;
+    transition: all .4s;
+   
+}
+	.gallery-pane img:hover{
+		opacity:.7;
+	}
+    
+    
+    
+    
+    .video-pane{
+        width: 100%;
+        height: 40vh;
+        margin: 5vh 0;
+    }
+    
+    
+    .nc-othernews{
+       width: 100%;
+        height: auto;
+        display:block;
+        float: right;
+        margin: 10vh 0;
+    }
+    
+    
+    
+    
+    .nc-othernews .newsitem{
+        width: 100%;
+        
+    }
+    
+        .nco-title{
+         clear: both;
+        font-family: 'Montserrat', sans-serif;
+        color: #2c3a41;
+        font-weight: 700;
+        font-size: 1.7em;
+        margin-bottom: 2vh;
+    }
+    
+    
+    
+    
+    
+    
+    
+	
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+	
+    
+    
+    
+    .newspic{
+        width: 100%;
+        height: auto;
+        display: block;
+        float: left;
+        clear: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        overflow: visible;
+        background-color: white;
+        transition: all .4s;
+        margin:-10vh .5% 2vh;
+    }
+  
+    
+    
+    .np-image{
+        height: 50vh;
+        width: 100%;
+        float: left;
+        clear: none;
+        margin: 0 0 2em 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    .np-text{
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        background-color: none;
+        width: 100%;
+        height: auto;
+        padding: 1%;
+        transition: all .4s;
+        margin: 0;
+        display: block;
+        float: left;
+        clear: both;
+    }
+    
+    
+   
+    
+
+   .np-text .type{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        float: left;
+        clear: none;
+       margin: 2vh 5vw;
+    }
+    
+    
+   .np-text .date{
+        font-family: 'Montserrat', sans-serif;
+        font-size: .8em;
+        float: right;
+        clear: none;
+       margin: 2vh 5vw;
+    }
+    
+    
+    .np-text .title{
+        clear: both;
+        font-family: 'Montserrat', sans-serif;
+        color: #2c3a41;
+        font-weight: 700;
+        font-size: 2em;
+        margin: 0vh 5vw 5vh;
+    }
+    
+    
+    
+    
+    
+    
+
+    .gallery-pane{
+		border-radius: 1em;
+        background-color: white;
+        height: auto;
+        -webkit-column-count: 4;
+          -webkit-column-gap:   1em;
+          -moz-column-count:    4;
+          -moz-column-gap:      1em;
+          column-count:         4;
+          column-gap:           1em; 
+       padding: 1em;
+        
+	}
+	
+
+	
+
+
+
+.gallery-pane img{
+	width: 100% !important;
+  height: auto !important;
+	opacity:1;
+	float:left;
+	clear:none;
+	background-color:rgba(255,255,255,1);
+	cursor:pointer;
+	  -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+    margin-bottom: 1em;
+    transition: all .4s;
+   
+}
+	.gallery-pane img:hover{
+		opacity:.7;
+	}
+    
+    
+    
+    
+    .video-pane{
+        width: 100%;
+        height: 70vh;
+        margin: 5vh 0;
+    }
+    
+    
+    .nc-othernews{
+       width: 100%;
+        height: auto;
+        display:block;
+        float: right;
+        margin: 10vh 0;
+    }
+    
+    
+    
+    
+    .nc-othernews .newsitem{
+        width: 100%;
+        
+    }
+    
+        .nco-title{
+         clear: both;
+        font-family: 'Montserrat', sans-serif;
+        color: #2c3a41;
+        font-weight: 700;
+        font-size: 2em;
+        margin-bottom: 2vh;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+		
+}

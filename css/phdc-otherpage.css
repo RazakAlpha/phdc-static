@@ -1,0 +1,349 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	14;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+
+
+    .ot-top{
+       
+        background-color: #e9f0ff;
+        display: block;
+        float: left;
+        clear: none;
+        position: relative;
+    }
+    
+    
+    .left-container{
+        height: auto;
+        width: 100vw;
+        display: block;
+        float: left;
+        clear: none;
+    }
+    
+    
+    .feature-pic{
+        width: 90%;
+        height: 60vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        float: left;
+        position: relative;
+        margin-left: 5vw;
+        margin-top: 2.5%;
+    }
+    
+    
+    
+    .fp-gradient{
+         background: rgb(36,47,100);
+        background: -webkit-linear-gradient(45deg, rgba(36,47,100,1) 0%, rgba(36,47,100,0) 100%);
+        background: -o-linear-gradient(45deg, rgba(36,47,100,1) 0%, rgba(36,47,100,0) 100%);
+        background: linear-gradient(45deg, rgba(36,47,100,1) 0%, rgba(36,47,100,0) 100%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+    }
+    
+    
+    
+    
+    
+    .fp-title{
+        position: absolute;
+        z-index:10;
+        width: auto;
+        height: auto;
+        padding: 1em 2em;
+        bottom: 10%;
+        left: 5vw;
+        border-width: 0 0 0 5px;
+        border-style: solid;
+        border-color: #0f9e4c;
+    }
+    
+    .fp-title h6{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+    
+    .fp-title h3{
+        font-family: "Bignoodletitling";
+        color: #fff;
+        font-size: 4em;
+        font-weight: 400;
+        line-height: 1em;
+    }
+    
+    
+    
+      .fp-title h3 span{
+        color: #cfd9ff;
+        font-family: "BignoodletitlingOblique";
+        font-weight: 400;
+        line-height: 1em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .pagelinks{
+        float: left;
+        clear: none;
+        position: fixed;
+        height: auto;
+        display: none;
+        top: 30vh;
+        right: 10%;
+        width: 30vh;
+          list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        color: #2c3a41;
+        font-weight: 700;
+        font-size: 1.3em;
+        line-height: 2em;
+
+    }
+    
+    
+    .pagelinks li{
+        width: 100%;
+        padding: 1% 3%;
+        cursor: pointer;
+        opacity: .7;
+        position: relative;
+          background-image: linear-gradient(#0f9e4c, #0f9e4c);
+      background-position: 0 100%; /*OR bottom left*/
+      background-size: 0% 1px;
+      background-repeat: no-repeat;
+        text-align: right;
+      transition:
+        background-size 0.5s,
+        background-position 0s 0.5s; /*change after the size immediately*/
+    }
+    
+    
+    
+    .pagelinks li:hover{
+     background-position: 100% 100%; /*OR bottom right*/
+      background-size: 100% 1px;
+        opacity: 1;
+    }
+    
+    
+	
+	
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+	
+
+
+    .ot-top{
+       
+        background-color: #e9f0ff;
+        display: block;
+        float: left;
+        clear: none;
+        position: relative;
+    }
+    
+    
+    .left-container{
+        height: auto;
+        width: 70vw;
+        display: block;
+        float: left;
+        clear: none;
+    }
+    
+    
+    .feature-pic{
+        width: 90%;
+        height: 60vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        float: left;
+        position: relative;
+        margin-left: 5vw;
+        margin-top: 2.5%;
+    }
+    
+    
+    
+    .fp-gradient{
+         background: rgb(36,47,100);
+        background: -webkit-linear-gradient(45deg, rgba(36,47,100,1) 0%, rgba(36,47,100,0) 100%);
+        background: -o-linear-gradient(45deg, rgba(36,47,100,1) 0%, rgba(36,47,100,0) 100%);
+        background: linear-gradient(45deg, rgba(36,47,100,1) 0%, rgba(36,47,100,0) 100%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+    }
+    
+    
+    
+    
+    
+    .fp-title{
+        position: absolute;
+        z-index:10;
+        width: auto;
+        height: auto;
+        padding: 1em 2em;
+        bottom: 10%;
+        left: 5vw;
+        border-width: 0 0 0 5px;
+        border-style: solid;
+        border-color: #0f9e4c;
+    }
+    
+    .fp-title h6{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+    
+    .fp-title h3{
+        font-family: "Bignoodletitling";
+        color: #fff;
+        font-size: 5em;
+        font-weight: 400;
+        line-height: 1em;
+    }
+    
+    
+    
+      .fp-title h3 span{
+        color: #cfd9ff;
+        font-family: "BignoodletitlingOblique";
+        font-weight: 400;
+        line-height: 1em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .pagelinks{
+        float: left;
+        clear: none;
+        position: fixed;
+        height: auto;
+        display: block;
+        top: 30vh;
+        right: 10%;
+        width: 30vh;
+          list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        color: #2c3a41;
+        font-weight: 700;
+        font-size: 1.3em;
+        line-height: 2em;
+
+    }
+    
+    
+    .pagelinks li{
+        width: 100%;
+        padding: 1% 3%;
+        cursor: pointer;
+        opacity: .7;
+        position: relative;
+          background-image: linear-gradient(#0f9e4c, #0f9e4c);
+      background-position: 0 100%; /*OR bottom left*/
+      background-size: 0% 1px;
+      background-repeat: no-repeat;
+        text-align: right;
+      transition:
+        background-size 0.5s,
+        background-position 0s 0.5s; /*change after the size immediately*/
+    }
+    
+    
+    
+    .pagelinks li:hover{
+     background-position: 100% 100%; /*OR bottom right*/
+      background-size: 100% 1px;
+        opacity: 1;
+    }
+    
+    
+    
+    
+    
+    
+	
+		
+}

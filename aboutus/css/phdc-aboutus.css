@@ -1,0 +1,1040 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	14;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+
+    
+    
+
+
+
+    
+     .he-message{
+      height: auto;
+        width: 80vw;
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+        background-color: white;
+        display: block;
+        float: left;
+        clear: none;
+        z-index: 50;
+        position: relative;
+        border-radius: 1em;
+        padding: 1em;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=14, Direction=0, Color=#000000)";/*IE 8*/
+-moz-box-shadow: 0 7px 14px -8px rgba(0,0,0,0.4);/*FF 3.5+*/
+-webkit-box-shadow: 0 7px 14px -8px rgba(0,0,0,0.4);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: 0 7px 14px -8px rgba(0,0,0,0.4);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=14, Direction=135, Color=#000000); /*IE 5.5-7*/
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    
+    
+        :root {
+  --he-message: 100%;
+  /*
+
+  */
+}
+    .hmi-image{
+               width: 15vh;
+        height:15vh;
+        float: left;
+        clear: none;
+        display: block;
+        background-image: url("../img/prez.jpg");
+        background-position: top center;
+        background-size: cover;
+        border-radius: 7.5vh;
+        margin: -5vh 2vh;
+        position: relative;
+        z-index: 100;
+    }
+    
+    .hmi-ceomd{
+          width:90%;
+        height: 45vh;
+        float: left;
+        clear: none;
+        display: block;
+        background-image: url("../img/prez.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 0vh;
+        margin: 0vh 2vh;
+    }
+    
+    .hmi-text{
+         float: left;
+        clear: none;
+        display: block;
+        width:100%;
+        height: auto;
+        padding-top: 0vh;
+        margin-left: 1vw;
+    }
+
+    
+    
+    .hmi-text h6{
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-top: 5vh;
+    }
+    
+    
+    .hmi-text p{
+        line-height: 1.5em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .statements{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-width: 2px 0 0 0;
+        border-style: solid;
+        border-color: #0f9e4c;
+        display: block;
+        float: left;
+        clear: none;
+        
+    }
+    
+    
+    
+    .statement{
+        display: block;
+        float: left;
+        clear: both;
+        height: auto;
+        width: 90%;
+        margin-left: 10%;
+        padding: 1em;
+        border-width: 0px 0 .5px 0;
+        border-style: solid;
+        border-color: #0f9e4c;
+    }
+    
+    
+    .s-inner{
+        width: 100%;
+        height: auto;
+        margin: 0%;
+    }
+    
+    
+    .sta-icon{
+        height:5em;
+        width:90%;
+        position: relative;
+        z-index: 0;
+        color: #0f9e4c;
+        
+    }
+    
+    
+    .sta-icon i{
+          font-size:4em;
+        position: relative;
+        float: left;
+        clear: none;
+        display: block;
+    }
+    
+    
+    .sta-icon span{
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        top: .7em;
+        font-weight: 700;
+        font-size: 2em;
+        left: .5em;
+        margin: 0;
+        padding: 0;
+    }
+	
+    
+    
+     .s-inner p{
+        line-height: 1.5em;
+         font-family: 'Montserrat', sans-serif;
+         font-weight: 400;
+         margin: 1vh 0 0 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /*TEAM*/
+    
+    .team-pic{
+        width: 48%;
+        height: 45vh;
+        float: left;
+        clear: none;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        transition: all .4s;
+        margin:1%;
+        overflow: hidden;
+    }
+    
+    .team-pic:hover  .tp-image{
+        height: 50%;
+
+    }
+    
+    .team-pic:hover  .tp-text{
+        height: 60%;
+    }
+    
+    
+    .team-pic:hover  .tp-text .tpn-footer{ 
+        display: block;
+    }
+    
+    
+    .tp-image{
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        display: block;
+        float: left;
+        clear: none;
+        top: 0;
+        left: 0;
+        background-position: top;
+        background-size: cover;
+        z-index: 0;
+        transition: all .4s;
+    }
+    
+    
+    .tp-text{
+        position: absolute;
+        width: 100%;
+        height:25%;
+        display: block;
+        float: left;
+        clear: none;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transition: all .4s;
+        z-index: 10;
+        overflow-y: scroll;
+    }
+    
+    
+    .tpn-head{
+        width: 80%;
+        height:auto;
+        margin: 5%;
+        display: block;
+        float: left;
+        clear: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 1.1em;
+        
+    }
+    
+    .tpn-head span{
+        color: #0f9e4c;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: .6em;
+        letter-spacing: 1px;
+    }
+    
+    
+    .tpn-footer{
+          font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: .8em;
+        letter-spacing: .2px;
+        line-height: 1.2em;
+        height: auto;
+        display: none;
+        width: 80%;
+        margin: 5%;
+    }
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+        .boardmember{
+        width: 100%;
+        height: 65vh;
+        float: left;
+        clear: none;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        transition: all .4s;
+        margin:1%;
+        overflow: hidden;
+    }
+    
+    
+    
+     .boardmember:hover  .tp-image{
+        height: 50%;
+
+    }
+    
+    .boardmember:hover  .tp-text{
+        height: 90%;
+    }
+    
+    
+    .boardmember:hover  .tp-text .tpn-footer{ 
+        display: block;
+    }
+
+
+    .tpn-footer::-webkit-scrollbar-track
+{	width: 20px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+	background-color:;
+	margin-right: 5%;
+}
+
+.tpn-footer::-webkit-scrollbar
+{
+	
+width: 5px;
+	
+	
+}
+
+.tpn-footer::-webkit-scrollbar-thumb
+{
+	background-color: #0F9E4C;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    .intro{
+        width: 90%;
+        margin-left: 5%;
+        display: block;
+        float: left;
+        clear: none;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 2em;
+        line-height: 1.5em;
+    }
+    
+    
+    
+    
+    
+    
+	.gallery-pane{
+		border-radius: 1em;
+        background-color: white;
+        width: 80%;
+        height: auto;
+        -webkit-column-count: 2;
+          -webkit-column-gap:   1em;
+          -moz-column-count:    2;
+          -moz-column-gap:      1em;
+          column-count:         2;
+          column-gap:           1em; 
+       padding: 1em;
+        
+	}
+	
+
+	
+
+
+
+.gallery-pane img{
+	width: 100% !important;
+  height: auto !important;
+	opacity:1;
+	float:left;
+	clear:none;
+	background-color:rgba(255,255,255,1);
+	cursor:pointer;
+	  -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+    margin-bottom: 1em;
+    transition: all .4s;
+   
+}
+	.gallery-pane img:hover{
+		opacity:.7;
+	}
+    
+    
+    
+    
+    
+    
+    
+    
+    .sus{
+        width: 90%;
+        height: auto;
+        float: left;
+        clear: none;
+        display: block;
+        padding: 10%;
+        margin: 2%;
+        border-radius: 1em;
+        color: white;
+    }
+    
+    
+    .sus i{
+        font-size: 3em;
+        margin-bottom: .5em;
+    }
+    
+    .sus h4{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: white;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+    
+    
+      .sus:first-of-type{
+        background-color: #ed7d31;
+    }
+    
+    .sus:nth-of-type(2n){
+        background-color: #a5a5a5;
+    }
+    
+    .sus:nth-of-type(3n){
+        background-color: #ffc000;
+    }
+    
+     .sus:nth-of-type(4n){
+        background-color: #4472c4;
+    }
+    
+    .sus:nth-of-type(5n){
+        background-color: #70ad47;
+    }
+    
+    
+     .pane{
+        background-color: white;
+        display: block;
+        float: left;
+        clear: none;
+        z-index: 50;
+        position: relative;
+        border-radius: 1em;
+        padding: 2em;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=14, Direction=0, Color=#000000)";/*IE 8*/
+        -moz-box-shadow: 0 7px 14px -8px rgba(0,0,0,0.4);/*FF 3.5+*/
+        -webkit-box-shadow: 0 7px 14px -8px rgba(0,0,0,0.4);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+        box-shadow: 0 7px 14px -8px rgba(0,0,0,0.4);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+        filter: progid:DXImageTransform.Microsoft.Shadow(Strength=14, Direction=135, Color=#000000); /*IE 5.5-7*/
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5em;
+        font-weight: 400;
+    
+    }
+	
+	
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+	
+    
+    
+    
+    
+     .he-message{
+        height: auto;
+        width: 100%;
+        margin-top: 0vh;
+         margin-bottom:5vh;
+        background-color: white;
+        display: block;
+        float: left;
+        clear: none;
+        z-index: 50;
+        position: relative;
+        border-radius: 1em;
+        padding: 1em;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=14, Direction=0, Color=#000000)";/*IE 8*/
+-moz-box-shadow: 0 7px 14px -8px rgba(0,0,0,0.4);/*FF 3.5+*/
+-webkit-box-shadow: 0 7px 14px -8px rgba(0,0,0,0.4);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+box-shadow: 0 7px 14px -8px rgba(0,0,0,0.4);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=14, Direction=135, Color=#000000); /*IE 5.5-7*/
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    
+    
+        :root {
+  --he-message: 45vw;
+  /*
+
+  */
+}
+    .hmi-image{
+        width: 30vh;
+        height: 30vh;
+        float: left;
+        clear: none;
+        display: block;
+        background-image: url("../img/prez.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 15vh;
+        margin: 2vh 2vh;
+    }
+    
+    .hmi-ceomd{
+          width: 30vh;
+        height: 45vh;
+        float: left;
+        clear: none;
+        display: block;
+        background-image: url("../img/prez.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 0vh;
+        margin: 2vh 2vh;
+    }
+    
+    .hmi-text{
+        float: left;
+        clear: none;
+        display: block;
+        width: calc(var(--he-message) - 20vh);
+        height: auto;
+        padding-top: 2vh;
+        margin-left: 1vw;
+        margin-bottom: 5vh;
+    }
+
+    
+    
+    .hmi-text h6{
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-top: 5vh;
+    }
+    
+    
+    .hmi-text p{
+        line-height: 1.5em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .statements{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-width: 2px 0 0 0;
+        border-style: solid;
+        border-color: #0f9e4c;
+        display: block;
+        float: left;
+        clear: none;
+        
+    }
+    
+    
+    
+    .statement{
+        display: block;
+        float: left;
+        clear: both;
+        height: auto;
+        width: 80%;
+        margin-left: 10%;
+        padding: 1em;
+        border-width: 0px 0 .5px 0;
+        border-style: solid;
+        border-color: #0f9e4c;
+    }
+    
+    
+    .s-inner{
+        width: 80%;
+        height: auto;
+        margin: 5%;
+    }
+    
+    
+    .sta-icon{
+        height: 7em;
+        width: 50%;
+        position: relative;
+        z-index: 0;
+        color: #0f9e4c;
+    }
+    
+    
+    .sta-icon i{
+          font-size: 6em;
+        position: relative;
+        float: left;
+        clear: none;
+        display: inline;
+    }
+    
+    
+    .sta-icon span{
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        top: .7em;
+        font-weight: 700;
+        font-size: 2em;
+        left: .5em;
+        margin: 0;
+        padding: 0;
+    }
+	
+    
+    
+     .s-inner p{
+        line-height: 1.5em;
+         font-family: 'Montserrat', sans-serif;
+         font-weight: 400;
+         margin: auto;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /*TEAM*/
+
+    
+    
+    .team-pic{
+        width: 30%;
+        height: 45vh;
+        float: left;
+        clear: none;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        transition: all .4s;
+        margin:1%;
+        overflow: hidden;
+    }
+    
+    .team-pic:hover  .tp-image{
+        height: 50%;
+
+    }
+    
+    .team-pic:hover  .tp-text{
+        height: 60%;
+    }
+    
+    
+    .team-pic:hover  .tp-text .tpn-footer{ 
+        display: block;
+    }
+    
+    
+    .tp-image{
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        display: block;
+        float: left;
+        clear: none;
+        top: 0;
+        left: 0;
+        background-position: top;
+        background-size: cover;
+        z-index: 0;
+        transition: all .4s;
+    }
+    
+    
+    .tp-text{
+        position: absolute;
+        width: 100%;
+        height:25%;
+        display: block;
+        float: left;
+        clear: none;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transition: all .4s;
+        z-index: 10;
+        line-height: 1.2em;
+        font-size: .9em;
+    }
+    
+    
+    .tpn-head{
+        width: 80%;
+        height:auto;
+        margin: 5%;
+        display: block;
+        float: left;
+        clear: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 1.3em;
+    }
+    
+    .tpn-head span{
+        color: #0f9e4c;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: .6em;
+        letter-spacing: 1px;
+    }
+    
+    
+    .tpn-footer{
+          font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        letter-spacing: .2px;
+        line-height: 1.2em;
+        height: auto;
+        display: none;
+        width: 90%;
+        margin: 5%;
+        clear: both;
+    }
+    
+    
+    
+    
+    
+    
+        .boardmember{
+        width: 48%;
+        height: 65vh;
+        float: left;
+        clear: none;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        transition: all .4s;
+        margin:1%;
+        overflow: hidden;
+    }
+    
+    
+    
+     .boardmember:hover  .tp-image{
+        height: 50%;
+
+    }
+    
+    .boardmember:hover  .tp-text{
+        height: 90%;
+    }
+    
+    
+    .boardmember:hover  .tp-text .tpn-footer{ 
+        display: block;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .intro{
+        width: 90%;
+        margin-left: 5%;
+        display: block;
+        float: left;
+        clear: none;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 2em;
+        line-height: 1.5em;
+    }
+    
+    
+    
+    
+    
+    
+	.gallery-pane{
+		border-radius: 1em;
+        background-color: white;
+        width: 80%;
+        height: auto;
+        -webkit-column-count: 4;
+          -webkit-column-gap:   1em;
+          -moz-column-count:    4;
+          -moz-column-gap:      1em;
+          column-count:         4;
+          column-gap:           1em; 
+       padding: 1em;
+        
+	}
+	
+
+	
+
+
+
+.gallery-pane img{
+	width: 100% !important;
+  height: auto !important;
+	opacity:1;
+	float:left;
+	clear:none;
+	background-color:rgba(255,255,255,1);
+	cursor:pointer;
+	  -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+    margin-bottom: 1em;
+    transition: all .4s;
+   
+}
+	.gallery-pane img:hover{
+		opacity:.7;
+	}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .sus{
+        width: 28%;
+        height: auto;
+        float: left;
+        clear: none;
+        display: block;
+        padding: 3%;
+        margin: 2%;
+        border-radius: 1em;
+        color: white;
+    }
+    
+    
+    .sus i{
+        font-size: 4em;
+        margin-bottom: .5em;
+    }
+    
+    .sus h4{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: white;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+    
+    
+      .sus:first-of-type{
+        background-color: #ed7d31;
+    }
+    
+    .sus:nth-of-type(2n){
+        background-color: #a5a5a5;
+    }
+    
+    .sus:nth-of-type(3n){
+        background-color: #ffc000;
+    }
+    
+     .sus:nth-of-type(4n){
+        background-color: #4472c4;
+    }
+    
+    .sus:nth-of-type(5n){
+        background-color: #70ad47;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        .pane{
+        background-color: white;
+        display: block;
+        float: left;
+        clear: none;
+        z-index: 50;
+        position: relative;
+        border-radius: 1em;
+        padding: 2em;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=14, Direction=0, Color=#000000)";/*IE 8*/
+        -moz-box-shadow: 0 7px 14px -8px rgba(0,0,0,0.4);/*FF 3.5+*/
+        -webkit-box-shadow: 0 7px 14px -8px rgba(0,0,0,0.4);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+        box-shadow: 0 7px 14px -8px rgba(0,0,0,0.4);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+        filter: progid:DXImageTransform.Microsoft.Shadow(Strength=14, Direction=135, Color=#000000); /*IE 5.5-7*/
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.5em;
+        font-weight: 400;
+            margin-bottom: 10vh;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+		
+}
